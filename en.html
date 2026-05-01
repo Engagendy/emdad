@@ -6,14 +6,14 @@
   <title>Emdad Home Furniture | Custom Furniture and Kitchens in the UAE</title>
   <meta name="description" content="Emdad Home Furniture designs and manufactures bedrooms, living rooms, kitchens, dining rooms, and custom furniture in the UAE with professional delivery and installation.">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <link rel="canonical" href="https://emdad-home.com/en.html">
-  <link rel="alternate" href="https://emdad-home.com/" hreflang="ar-ae">
-  <link rel="alternate" href="https://emdad-home.com/en.html" hreflang="en-ae">
-  <link rel="alternate" href="https://emdad-home.com/en.html" hreflang="x-default">
+  <link rel="canonical" href="https://engagendy.github.io/emdad/en.html">
+  <link rel="alternate" href="https://engagendy.github.io/emdad/" hreflang="ar-ae">
+  <link rel="alternate" href="https://engagendy.github.io/emdad/en.html" hreflang="en-ae">
+  <link rel="alternate" href="https://engagendy.github.io/emdad/en.html" hreflang="x-default">
   <meta property="og:title" content="Emdad Home Furniture">
   <meta property="og:description" content="Custom furniture and kitchens in the UAE with selected materials, precise finishing, delivery and installation.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://emdad-home.com/en.html">
+  <meta property="og:url" content="https://engagendy.github.io/emdad/en.html">
   <meta property="og:image" content="https://emdad-home.com/wp-content/uploads/2026/03/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table-scaled.webp">
   <meta property="og:locale" content="en_AE">
   <meta name="twitter:card" content="summary_large_image">
@@ -21,6 +21,9 @@
   <meta name="twitter:description" content="Custom furniture and kitchens in the UAE with professional delivery and installation.">
   <meta name="twitter:image" content="https://emdad-home.com/wp-content/uploads/2026/03/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table-scaled.webp">
   <meta name="theme-color" content="#17120d">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <link rel="alternate" type="text/plain" href="llms.txt" title="LLMs.txt">
   <link rel="preload" as="image" href="https://emdad-home.com/wp-content/uploads/2026/03/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table-scaled.webp" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -398,6 +401,39 @@
       font-size: .98rem;
     }
 
+    .answer-band {
+      padding-block: 74px;
+      background: var(--white);
+      border-block: 1px solid var(--line);
+    }
+
+    .answer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+    }
+
+    .answer-card {
+      min-height: 230px;
+      display: grid;
+      align-content: start;
+      gap: 10px;
+      padding: 24px;
+      background: var(--white);
+    }
+
+    .answer-card strong {
+      font-size: 1.1rem;
+      line-height: 1.35;
+    }
+
+    .answer-card p {
+      color: var(--muted);
+      font-size: .96rem;
+    }
+
     .split {
       background: var(--soft);
     }
@@ -466,6 +502,39 @@
     .step h3 {
       margin-bottom: 4px;
       font-size: 1.1rem;
+    }
+
+    .detail-band {
+      background: var(--paper);
+    }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .detail-box {
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .62);
+    }
+
+    .detail-box h3 {
+      margin-bottom: 10px;
+      font-size: 1.24rem;
+    }
+
+    .detail-box p {
+      color: var(--muted);
+    }
+
+    .keyword-line {
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: .96rem;
     }
 
     .projects {
@@ -791,6 +860,12 @@
       gap: 14px;
     }
 
+    .footer-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
     .whatsapp-float {
       position: fixed;
       inset: auto 22px 22px auto;
@@ -943,6 +1018,11 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
+      .answer-grid,
+      .detail-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
       .project-grid {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -1009,6 +1089,8 @@
 
       .hero-proof,
       .service-grid,
+      .answer-grid,
+      .detail-grid,
       .benefits,
       .project-grid {
         grid-template-columns: 1fr;
@@ -1100,33 +1182,33 @@
       "@graph": [
         {
           "@type": "WebPage",
-          "@id": "https://emdad-home.com/#webpage",
-          "url": "https://emdad-home.com/",
+          "@id": "https://engagendy.github.io/emdad/#webpage",
+          "url": "https://engagendy.github.io/emdad/",
           "name": "إمداد لصناعة الأثاث المنزلي | أثاث ومطابخ حسب الطلب في الإمارات",
-          "isPartOf": { "@id": "https://emdad-home.com/#website" },
-          "about": { "@id": "https://emdad-home.com/#business" },
-          "primaryImageOfPage": { "@id": "https://emdad-home.com/#primaryimage" },
+          "isPartOf": { "@id": "https://engagendy.github.io/emdad/#website" },
+          "about": { "@id": "https://engagendy.github.io/emdad/#business" },
+          "primaryImageOfPage": { "@id": "https://engagendy.github.io/emdad/#primaryimage" },
           "inLanguage": "ar-AE",
           "description": "إمداد لصناعة الأثاث المنزلي تصمم وتصنع غرف نوم، غرف معيشة، مطابخ، غرف سفرة وأثاث حسب الطلب في الإمارات مع توصيل وتركيب احترافي."
         },
         {
           "@type": "ImageObject",
-          "@id": "https://emdad-home.com/#primaryimage",
+          "@id": "https://engagendy.github.io/emdad/#primaryimage",
           "url": "https://emdad-home.com/wp-content/uploads/2026/03/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table-scaled.webp",
           "caption": "غرفة معيشة عصرية من إمداد لصناعة الأثاث المنزلي"
         },
         {
           "@type": "WebSite",
-          "@id": "https://emdad-home.com/#website",
+          "@id": "https://engagendy.github.io/emdad/#website",
           "name": "إمداد لصناعة الأثاث المنزلي",
-          "url": "https://emdad-home.com/",
+          "url": "https://engagendy.github.io/emdad/",
           "inLanguage": "ar"
         },
         {
           "@type": "FurnitureStore",
-          "@id": "https://emdad-home.com/#business",
+          "@id": "https://engagendy.github.io/emdad/#business",
           "name": "إمداد لصناعة الأثاث المنزلي",
-          "url": "https://emdad-home.com/",
+          "url": "https://engagendy.github.io/emdad/",
           "image": "https://emdad-home.com/wp-content/uploads/2026/03/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table-scaled.webp",
           "telephone": "+971556592722",
           "email": "info@emdad-home.com",
@@ -1144,39 +1226,39 @@
         },
         {
           "@type": "ItemList",
-          "@id": "https://emdad-home.com/#services",
+          "@id": "https://engagendy.github.io/emdad/#services",
           "name": "خدمات إمداد لصناعة الأثاث المنزلي",
           "itemListElement": [
-            { "@type": "Service", "position": 1, "name": "تصنيع غرف النوم", "provider": { "@id": "https://emdad-home.com/#business" } },
-            { "@type": "Service", "position": 2, "name": "غرف المعيشة والانتريهات", "provider": { "@id": "https://emdad-home.com/#business" } },
-            { "@type": "Service", "position": 3, "name": "غرف السفرة", "provider": { "@id": "https://emdad-home.com/#business" } },
-            { "@type": "Service", "position": 4, "name": "تصميم أثاث حسب الطلب", "provider": { "@id": "https://emdad-home.com/#business" } },
-            { "@type": "Service", "position": 5, "name": "التوصيل والتركيب", "provider": { "@id": "https://emdad-home.com/#business" } },
-            { "@type": "Service", "position": 6, "name": "تصميم وتنفيذ المطابخ", "provider": { "@id": "https://emdad-home.com/#business" } }
+            { "@type": "Service", "position": 1, "name": "تصنيع غرف النوم", "provider": { "@id": "https://engagendy.github.io/emdad/#business" } },
+            { "@type": "Service", "position": 2, "name": "غرف المعيشة والانتريهات", "provider": { "@id": "https://engagendy.github.io/emdad/#business" } },
+            { "@type": "Service", "position": 3, "name": "غرف السفرة", "provider": { "@id": "https://engagendy.github.io/emdad/#business" } },
+            { "@type": "Service", "position": 4, "name": "تصميم أثاث حسب الطلب", "provider": { "@id": "https://engagendy.github.io/emdad/#business" } },
+            { "@type": "Service", "position": 5, "name": "التوصيل والتركيب", "provider": { "@id": "https://engagendy.github.io/emdad/#business" } },
+            { "@type": "Service", "position": 6, "name": "تصميم وتنفيذ المطابخ", "provider": { "@id": "https://engagendy.github.io/emdad/#business" } }
           ]
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://emdad-home.com/#breadcrumbs",
+          "@id": "https://engagendy.github.io/emdad/#breadcrumbs",
           "itemListElement": [
             {
               "@type": "ListItem",
               "position": 1,
               "name": "الرئيسية",
-              "item": "https://emdad-home.com/"
+              "item": "https://engagendy.github.io/emdad/"
             }
           ]
         },
         {
           "@type": "FAQPage",
-          "@id": "https://emdad-home.com/#faq",
+          "@id": "https://engagendy.github.io/emdad/#faq",
           "mainEntity": [
             {
               "@type": "Question",
               "name": "هل يمكن تنفيذ تصميمات حسب الطلب؟",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "نعم، توفر إمداد تصميم أثاث مخصص حسب المقاسات والألوان والخامات التي تناسب احتياج العميل ومساحة المنزل."
+                "text": "نعم، تنفذ إمداد تصميمات حسب الطلب للأثاث المنزلي والمطابخ. يمكن تخصيص المقاسات، الألوان، الخامات، طريقة التخزين، والتفاصيل النهائية بما يناسب مساحة المنزل وأسلوب الاستخدام اليومي."
               }
             },
             {
@@ -1184,7 +1266,7 @@
               "name": "ما مدة تنفيذ الطلب؟",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "تختلف مدة التنفيذ حسب نوع وحجم الطلب، ويتم تحديدها بعد الاتفاق على التصميم والخامات والمقاسات."
+                "text": "تختلف مدة التنفيذ حسب حجم المشروع ونوع القطعة المطلوبة وتوفر الخامات. بعد مراجعة المقاسات والتصميم، يتم تحديد جدول زمني واضح للتصنيع والتشطيب والتوصيل والتركيب."
               }
             },
             {
@@ -1192,7 +1274,7 @@
               "name": "هل توفرون خدمة التوصيل والتركيب؟",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "نعم، تقدم إمداد خدمة التوصيل والتركيب لضمان جاهزية الأثاث للاستخدام بعد التسليم."
+                "text": "نعم، توفر إمداد خدمة التوصيل والتركيب داخل المنزل. يتولى فريق التركيب تثبيت القطع، مراجعة التفاصيل النهائية، والتأكد من أن الأثاث أو المطبخ جاهز للاستخدام بعد التسليم."
               }
             },
             {
@@ -1200,7 +1282,7 @@
               "name": "ما نوع الخامات المستخدمة؟",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "تستخدم إمداد خامات مختارة بعناية لضمان المتانة وطول العمر مع تشطيبات مناسبة للاستخدام اليومي."
+                "text": "تعتمد الخامات على نوع المشروع والميزانية والاستخدام. تساعد إمداد العميل في اختيار الأخشاب، الأقمشة، أسطح المطابخ، والتشطيبات المناسبة لتحقيق توازن بين المتانة، الشكل، وسهولة الصيانة."
               }
             },
             {
@@ -1208,7 +1290,7 @@
               "name": "هل يوجد ضمان على المنتجات؟",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "نعم، تقدم إمداد ضمانًا وفق سياسة الشركة لضمان راحة العميل ورضاه بعد التسليم."
+                "text": "نعم، تقدم إمداد ضمانًا وفق سياسة الشركة ونوع المنتج أو الخدمة. الهدف هو ضمان راحة العميل بعد التسليم، ودعم أي ملاحظات مرتبطة بجودة التصنيع أو التركيب."
               }
             }
           ]
@@ -1229,8 +1311,10 @@
       </a>
       <nav class="nav-links" aria-label="القائمة الرئيسية" data-i18n-attr="aria-label:mainMenu">
         <a href="#services" data-i18n="navServices">خدماتنا</a>
+        <a href="#quick-answers" data-i18n="navAnswers">إجابات سريعة</a>
         <a href="#process" data-i18n="navProcess">طريقة العمل</a>
         <a href="#projects" data-i18n="navProjects">أعمالنا</a>
+        <a href="#instagram" data-i18n="navInstagram">فيديوهات</a>
         <a href="#faq" data-i18n="navFaq">الأسئلة الشائعة</a>
         <a href="#contact" data-i18n="navContact">تواصل معنا</a>
       </nav>
@@ -1333,11 +1417,41 @@
       </div>
     </section>
 
+    <section class="answer-band" id="quick-answers">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker" data-i18n="answersKicker">إجابات سريعة</p>
+            <h2 data-i18n="answersTitle">ما الذي تقدمه إمداد بالضبط؟</h2>
+          </div>
+          <p data-i18n="answersLead">إجابات مختصرة وواضحة تساعد العميل على فهم الخدمة بسرعة قبل طلب عرض السعر.</p>
+        </div>
+        <div class="answer-grid">
+          <article class="answer-card reveal">
+            <strong data-i18n="answer1Title">أثاث حسب الطلب في الإمارات</strong>
+            <p data-i18n="answer1Text">تصمم إمداد وتصنع أثاثًا منزليًا حسب المقاس، بما يشمل غرف النوم، الأرائك، وحدات التلفاز، غرف السفرة، والخزائن، مع اختيار الألوان والخامات حسب مساحة المنزل واحتياج العميل.</p>
+          </article>
+          <article class="answer-card reveal">
+            <strong data-i18n="answer2Title">مطابخ عملية بتفاصيل يومية</strong>
+            <p data-i18n="answer2Text">تنفذ إمداد مطابخ مخصصة تراعي توزيع التخزين، سهولة الحركة، مقاومة الرطوبة والحرارة، وتناسق الواجهة مع أسلوب المنزل، من التصميم الأولي حتى التركيب النهائي.</p>
+          </article>
+          <article class="answer-card reveal">
+            <strong data-i18n="answer3Title">قياس وتصنيع وتركيب</strong>
+            <p data-i18n="answer3Text">تمر الخدمة بمراحل واضحة: فهم الطلب، مراجعة المقاسات، اختيار الخامات، التصنيع، التشطيب، ثم التوصيل والتركيب داخل المنزل ليصل الأثاث جاهزًا للاستخدام.</p>
+          </article>
+          <article class="answer-card reveal">
+            <strong data-i18n="answer4Title">لمن تناسب الخدمة؟</strong>
+            <p data-i18n="answer4Text">تناسب الخدمة أصحاب المنازل، الشقق، الفلل، ومشاريع التجديد الذين يحتاجون أثاثًا أو مطبخًا بمقاسات خاصة وجودة تنفيذ أعلى من الحلول الجاهزة.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="split" id="process">
       <div class="container split-grid">
         <div class="image-stack reveal" aria-hidden="true">
-          <img class="large" src="https://emdad-home.com/wp-content/uploads/2026/03/2151929519.jpg" alt="" loading="lazy" decoding="async">
-          <img class="small" src="https://emdad-home.com/wp-content/uploads/2026/03/modern-kitchen-interior-design_23-2150771995.webp" alt="" loading="lazy" decoding="async">
+          <img class="large" src="https://emdad-home.com/wp-content/uploads/2026/03/2151929519.jpg" alt="تصميم أثاث منزلي بتفاصيل عصرية من إمداد" loading="lazy" decoding="async">
+          <img class="small" src="https://emdad-home.com/wp-content/uploads/2026/03/modern-kitchen-interior-design_23-2150771995.webp" alt="مطبخ حديث حسب الطلب مع تشطيب عملي" loading="lazy" decoding="async">
         </div>
         <div class="reveal">
           <p class="section-kicker" data-i18n="processKicker">طريقة العمل</p>
@@ -1364,12 +1478,39 @@
             </article>
             <article class="step">
               <div>
-                <h3 data-i18n="step4Title">التوصيل والتركيب</h3>
+                <h3 data-i18n="step4Title">التسليم داخل المنزل</h3>
                 <p data-i18n="step4Text">نسلم الأثاث ونركبه باحترافية حتى يصبح جاهزًا للاستخدام مباشرة.</p>
               </div>
             </article>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="detail-band">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker" data-i18n="detailsKicker">الخامات والتغطية</p>
+            <h2 data-i18n="detailsTitle">تفاصيل يبحث عنها العميل قبل التواصل</h2>
+          </div>
+          <p data-i18n="detailsLead">إضافة هذه التفاصيل تجعل الصفحة أكثر فائدة للعميل، وتمنح محركات البحث والذكاء الاصطناعي إجابات أوضح عن نطاق الخدمة.</p>
+        </div>
+        <div class="detail-grid">
+          <article class="detail-box reveal">
+            <h3 data-i18n="detail1Title">الخامات والتشطيبات</h3>
+            <p data-i18n="detail1Text">يتم اختيار الخامات بناءً على الاستخدام اليومي، الميزانية، والرغبة الجمالية. تشمل الخيارات الأخشاب، الأقمشة، أسطح المطابخ، وحدات التخزين، والتشطيبات المقاومة للاستخدام المتكرر.</p>
+          </article>
+          <article class="detail-box reveal">
+            <h3 data-i18n="detail2Title">مناطق الخدمة</h3>
+            <p data-i18n="detail2Text">تخدم إمداد العملاء داخل الإمارات، مع تركيز على طلبات الأثاث المنزلي والمطابخ حسب الطلب، والتنسيق المسبق لمواعيد المعاينة أو التوصيل والتركيب.</p>
+          </article>
+          <article class="detail-box reveal">
+            <h3 data-i18n="detail3Title">ما قبل عرض السعر</h3>
+            <p data-i18n="detail3Text">للحصول على عرض أدق، يفضل إرسال صور المساحة، المقاسات التقريبية، نوع القطعة المطلوبة، المدينة، والخامة أو اللون المفضل إن وجد.</p>
+          </article>
+        </div>
+        <p class="keyword-line reveal" data-i18n="keywordLine">كلمات مرتبطة بخدماتنا: أثاث حسب الطلب، مطابخ تفصيل، غرف نوم مخصصة، غرف معيشة، غرف سفرة، خزائن، وحدات تلفاز، توصيل وتركيب أثاث في الإمارات.</p>
       </div>
     </section>
 
@@ -1524,28 +1665,28 @@
         <div class="reveal">
           <p class="section-kicker" data-i18n="faqKicker">الأسئلة الشائعة</p>
           <h2 data-i18n="faqTitle">إجابات تساعد العميل على اتخاذ القرار</h2>
-          <p class="muted" data-i18n="faqLead">هذه الأسئلة مصممة لتحسين الثقة والتحويل، وهي أيضًا مناسبة للظهور في نتائج البحث والإجابات الذكية.</p>
+          <p class="muted" data-i18n="faqLead">أسئلة عملية تساعدك على معرفة ما تحتاجه قبل طلب عرض السعر أو إرسال مقاسات المساحة.</p>
         </div>
         <div class="faq-list reveal">
           <details open>
             <summary data-i18n="faq1Q">هل يمكن تنفيذ تصميمات حسب الطلب؟</summary>
-            <p data-i18n="faq1A">نعم، نوفر تصميم أثاث مخصص حسب المقاسات والألوان والخامات التي تناسب احتياجك ومساحة منزلك.</p>
+            <p data-i18n="faq1A">نعم، تنفذ إمداد تصميمات حسب الطلب للأثاث المنزلي والمطابخ. يمكن تخصيص المقاسات، الألوان، الخامات، طريقة التخزين، والتفاصيل النهائية بما يناسب مساحة المنزل وأسلوب الاستخدام اليومي.</p>
           </details>
           <details>
             <summary data-i18n="faq2Q">ما مدة تنفيذ الطلب؟</summary>
-            <p data-i18n="faq2A">تختلف المدة حسب نوع وحجم الطلب، ويتم تحديدها بدقة بعد الاتفاق على التصميم والخامات والمقاسات.</p>
+            <p data-i18n="faq2A">تختلف مدة التنفيذ حسب حجم المشروع ونوع القطعة المطلوبة وتوفر الخامات. بعد مراجعة المقاسات والتصميم، يتم تحديد جدول زمني واضح للتصنيع والتشطيب والتوصيل والتركيب.</p>
           </details>
           <details>
             <summary data-i18n="faq3Q">هل توفرون خدمة التوصيل والتركيب؟</summary>
-            <p data-i18n="faq3A">نعم، نقدم توصيلًا آمنًا وتركيبًا متخصصًا للتأكد من أن الأثاث جاهز للاستخدام بعد التسليم.</p>
+            <p data-i18n="faq3A">نعم، توفر إمداد خدمة التوصيل والتركيب داخل المنزل. يتولى فريق التركيب تثبيت القطع، مراجعة التفاصيل النهائية، والتأكد من أن الأثاث أو المطبخ جاهز للاستخدام بعد التسليم.</p>
           </details>
           <details>
             <summary data-i18n="faq4Q">ما نوع الخامات المستخدمة؟</summary>
-            <p data-i18n="faq4A">نستخدم خامات مختارة بعناية لضمان المتانة وطول العمر، مع تشطيبات مناسبة لطبيعة الاستخدام اليومي.</p>
+            <p data-i18n="faq4A">تعتمد الخامات على نوع المشروع والميزانية والاستخدام. تساعد إمداد العميل في اختيار الأخشاب، الأقمشة، أسطح المطابخ، والتشطيبات المناسبة لتحقيق توازن بين المتانة، الشكل، وسهولة الصيانة.</p>
           </details>
           <details>
             <summary data-i18n="faq5Q">هل يوجد ضمان على المنتجات؟</summary>
-            <p data-i18n="faq5A">نعم، تقدم إمداد ضمانًا وفق سياسة الشركة لضمان راحة العميل ورضاه بعد التسليم.</p>
+            <p data-i18n="faq5A">نعم، تقدم إمداد ضمانًا وفق سياسة الشركة ونوع المنتج أو الخدمة. الهدف هو ضمان راحة العميل بعد التسليم، ودعم أي ملاحظات مرتبطة بجودة التصنيع أو التركيب.</p>
           </details>
         </div>
       </div>
@@ -1569,6 +1710,12 @@
         <strong data-i18n="footerBrand">إمداد لصناعة الأثاث المنزلي</strong>
         <div data-i18n="footerContact">الإمارات | 0556592722 | info@emdad-home.com</div>
       </div>
+      <nav class="footer-nav" aria-label="روابط داخلية" data-i18n-attr="aria-label:footerNav">
+        <a href="#services" data-i18n="navServices">خدماتنا</a>
+        <a href="#quick-answers" data-i18n="navAnswers">إجابات سريعة</a>
+        <a href="#projects" data-i18n="navProjects">أعمالنا</a>
+        <a href="#contact" data-i18n="navContact">تواصل معنا</a>
+      </nav>
       <div class="social" aria-label="روابط التواصل الاجتماعي">
         <a href="https://www.instagram.com/emdadhomefurniture/" target="_blank" rel="noopener">Instagram</a>
         <a href="https://www.facebook.com/profile.php?id=61586506961363" target="_blank" rel="noopener">Facebook</a>
@@ -1589,7 +1736,7 @@
         <button class="icon-btn" type="button" data-gallery-close aria-label="إغلاق المعرض" data-i18n-attr="aria-label:galleryClose">×</button>
       </div>
       <div class="gallery-main">
-        <img id="galleryImage" src="" alt="">
+        <img id="galleryImage" src="https://emdad-home.com/wp-content/uploads/2026/03/إمداد-لصناعة-الأثاث-المنزلي-3-scaled.webp" alt="معرض أعمال إمداد لصناعة الأثاث المنزلي">
         <button class="icon-btn gallery-arrow prev" type="button" data-gallery-prev aria-label="الصورة السابقة" data-i18n-attr="aria-label:galleryPrev">‹</button>
         <button class="icon-btn gallery-arrow next" type="button" data-gallery-next aria-label="الصورة التالية" data-i18n-attr="aria-label:galleryNext">›</button>
       </div>
@@ -1614,10 +1761,13 @@
         brandSub: 'لصناعة الأثاث المنزلي',
         mainMenu: 'القائمة الرئيسية',
         navServices: 'خدماتنا',
+        navAnswers: 'إجابات سريعة',
         navProcess: 'طريقة العمل',
         navProjects: 'أعمالنا',
+        navInstagram: 'فيديوهات',
         navFaq: 'الأسئلة الشائعة',
         navContact: 'تواصل معنا',
+        footerNav: 'روابط داخلية',
         callDirect: 'اتصال مباشر',
         whatsapp: 'واتساب',
         heroEyebrow: 'تصميم، تصنيع، توصيل وتركيب',
@@ -1647,6 +1797,17 @@
         service5Text: 'توصيل آمن وتركيب احترافي للتأكد من أن الأثاث يصل جاهزًا للاستخدام دون تعقيد.',
         service6Title: 'تصميم وتنفيذ المطابخ',
         service6Text: 'مطابخ عملية مقاومة للرطوبة والحرارة، مع توزيع داخلي مدروس وتشطيب مناسب للاستخدام اليومي.',
+        answersKicker: 'إجابات سريعة',
+        answersTitle: 'ما الذي تقدمه إمداد بالضبط؟',
+        answersLead: 'إجابات مختصرة وواضحة تساعد العميل على فهم الخدمة بسرعة قبل طلب عرض السعر.',
+        answer1Title: 'أثاث حسب الطلب في الإمارات',
+        answer1Text: 'تصمم إمداد وتصنع أثاثًا منزليًا حسب المقاس، بما يشمل غرف النوم، الأرائك، وحدات التلفاز، غرف السفرة، والخزائن، مع اختيار الألوان والخامات حسب مساحة المنزل واحتياج العميل.',
+        answer2Title: 'مطابخ عملية بتفاصيل يومية',
+        answer2Text: 'تنفذ إمداد مطابخ مخصصة تراعي توزيع التخزين، سهولة الحركة، مقاومة الرطوبة والحرارة، وتناسق الواجهة مع أسلوب المنزل، من التصميم الأولي حتى التركيب النهائي.',
+        answer3Title: 'قياس وتصنيع وتركيب',
+        answer3Text: 'تمر الخدمة بمراحل واضحة: فهم الطلب، مراجعة المقاسات، اختيار الخامات، التصنيع، التشطيب، ثم التوصيل والتركيب داخل المنزل ليصل الأثاث جاهزًا للاستخدام.',
+        answer4Title: 'لمن تناسب الخدمة؟',
+        answer4Text: 'تناسب الخدمة أصحاب المنازل، الشقق، الفلل، ومشاريع التجديد الذين يحتاجون أثاثًا أو مطبخًا بمقاسات خاصة وجودة تنفيذ أعلى من الحلول الجاهزة.',
         processKicker: 'طريقة العمل',
         processTitle: 'من القياس إلى التركيب بخطوات واضحة',
         processLead: 'نحول احتياجك إلى قطعة أثاث مناسبة للمساحة والاستخدام، مع متابعة التفاصيل قبل التصنيع وبعد التسليم.',
@@ -1656,8 +1817,18 @@
         step2Text: 'نساعدك في اختيار الألوان، الأقمشة، الأخشاب، والتشطيبات المناسبة للميزانية والمنزل.',
         step3Title: 'التصنيع والتشطيب',
         step3Text: 'ينفذ فريقنا القطع وفق معايير دقيقة لضمان المتانة، الراحة، وجودة الشكل النهائي.',
-        step4Title: 'التوصيل والتركيب',
+        step4Title: 'التسليم داخل المنزل',
         step4Text: 'نسلم الأثاث ونركبه باحترافية حتى يصبح جاهزًا للاستخدام مباشرة.',
+        detailsKicker: 'الخامات والتغطية',
+        detailsTitle: 'تفاصيل يبحث عنها العميل قبل التواصل',
+        detailsLead: 'إضافة هذه التفاصيل تجعل الصفحة أكثر فائدة للعميل، وتمنح محركات البحث والذكاء الاصطناعي إجابات أوضح عن نطاق الخدمة.',
+        detail1Title: 'الخامات والتشطيبات',
+        detail1Text: 'يتم اختيار الخامات بناءً على الاستخدام اليومي، الميزانية، والرغبة الجمالية. تشمل الخيارات الأخشاب، الأقمشة، أسطح المطابخ، وحدات التخزين، والتشطيبات المقاومة للاستخدام المتكرر.',
+        detail2Title: 'مناطق الخدمة',
+        detail2Text: 'تخدم إمداد العملاء داخل الإمارات، مع تركيز على طلبات الأثاث المنزلي والمطابخ حسب الطلب، والتنسيق المسبق لمواعيد المعاينة أو التوصيل والتركيب.',
+        detail3Title: 'ما قبل عرض السعر',
+        detail3Text: 'للحصول على عرض أدق، يفضل إرسال صور المساحة، المقاسات التقريبية، نوع القطعة المطلوبة، المدينة، والخامة أو اللون المفضل إن وجد.',
+        keywordLine: 'كلمات مرتبطة بخدماتنا: أثاث حسب الطلب، مطابخ تفصيل، غرف نوم مخصصة، غرف معيشة، غرف سفرة، خزائن، وحدات تلفاز، توصيل وتركيب أثاث في الإمارات.',
         projectsKicker: 'أعمالنا',
         projectsTitle: 'نماذج تلهم قرار الشراء',
         projectsLead: 'الصور هي أقوى دليل في مجال الأثاث. اضغط على أي مشروع لعرض صور أكثر من نفس الفئة.',
@@ -1709,17 +1880,17 @@
         benefit4Text: 'مواعيد واضحة وتواصل مباشر قبل وبعد البيع لضمان تجربة مريحة.',
         faqKicker: 'الأسئلة الشائعة',
         faqTitle: 'إجابات تساعد العميل على اتخاذ القرار',
-        faqLead: 'هذه الأسئلة مصممة لتحسين الثقة والتحويل، وهي أيضًا مناسبة للظهور في نتائج البحث والإجابات الذكية.',
+        faqLead: 'أسئلة عملية تساعدك على معرفة ما تحتاجه قبل طلب عرض السعر أو إرسال مقاسات المساحة.',
         faq1Q: 'هل يمكن تنفيذ تصميمات حسب الطلب؟',
-        faq1A: 'نعم، نوفر تصميم أثاث مخصص حسب المقاسات والألوان والخامات التي تناسب احتياجك ومساحة منزلك.',
+        faq1A: 'نعم، تنفذ إمداد تصميمات حسب الطلب للأثاث المنزلي والمطابخ. يمكن تخصيص المقاسات، الألوان، الخامات، طريقة التخزين، والتفاصيل النهائية بما يناسب مساحة المنزل وأسلوب الاستخدام اليومي.',
         faq2Q: 'ما مدة تنفيذ الطلب؟',
-        faq2A: 'تختلف المدة حسب نوع وحجم الطلب، ويتم تحديدها بدقة بعد الاتفاق على التصميم والخامات والمقاسات.',
+        faq2A: 'تختلف مدة التنفيذ حسب حجم المشروع ونوع القطعة المطلوبة وتوفر الخامات. بعد مراجعة المقاسات والتصميم، يتم تحديد جدول زمني واضح للتصنيع والتشطيب والتوصيل والتركيب.',
         faq3Q: 'هل توفرون خدمة التوصيل والتركيب؟',
-        faq3A: 'نعم، نقدم توصيلًا آمنًا وتركيبًا متخصصًا للتأكد من أن الأثاث جاهز للاستخدام بعد التسليم.',
+        faq3A: 'نعم، توفر إمداد خدمة التوصيل والتركيب داخل المنزل. يتولى فريق التركيب تثبيت القطع، مراجعة التفاصيل النهائية، والتأكد من أن الأثاث أو المطبخ جاهز للاستخدام بعد التسليم.',
         faq4Q: 'ما نوع الخامات المستخدمة؟',
-        faq4A: 'نستخدم خامات مختارة بعناية لضمان المتانة وطول العمر، مع تشطيبات مناسبة لطبيعة الاستخدام اليومي.',
+        faq4A: 'تعتمد الخامات على نوع المشروع والميزانية والاستخدام. تساعد إمداد العميل في اختيار الأخشاب، الأقمشة، أسطح المطابخ، والتشطيبات المناسبة لتحقيق توازن بين المتانة، الشكل، وسهولة الصيانة.',
         faq5Q: 'هل يوجد ضمان على المنتجات؟',
-        faq5A: 'نعم، تقدم إمداد ضمانًا وفق سياسة الشركة لضمان راحة العميل ورضاه بعد التسليم.',
+        faq5A: 'نعم، تقدم إمداد ضمانًا وفق سياسة الشركة ونوع المنتج أو الخدمة. الهدف هو ضمان راحة العميل بعد التسليم، ودعم أي ملاحظات مرتبطة بجودة التصنيع أو التركيب.',
         finalKicker: 'جاهز تبدأ؟',
         finalTitle: 'أرسل صورة أو مقاسات المساحة، ودعنا نقترح عليك الحل المناسب',
         finalLead: 'سواء كنت تبحث عن غرفة نوم، مطبخ، غرفة معيشة، أو قطعة مخصصة، يمكن لفريق إمداد تحويل الفكرة إلى أثاث عملي وأنيق.',
@@ -1747,10 +1918,13 @@
         brandSub: 'Home Furniture Manufacturing',
         mainMenu: 'Main menu',
         navServices: 'Services',
+        navAnswers: 'Quick Answers',
         navProcess: 'Process',
         navProjects: 'Our Works',
+        navInstagram: 'Videos',
         navFaq: 'FAQ',
         navContact: 'Contact',
+        footerNav: 'Internal links',
         callDirect: 'Call now',
         whatsapp: 'WhatsApp',
         heroEyebrow: 'Design, manufacturing, delivery and installation',
@@ -1780,6 +1954,17 @@
         service5Text: 'Safe delivery and professional installation so the furniture arrives ready to use.',
         service6Title: 'Kitchen Design and Execution',
         service6Text: 'Practical kitchens with moisture- and heat-aware materials, thoughtful storage, and durable finishes.',
+        answersKicker: 'Quick Answers',
+        answersTitle: 'What exactly does Emdad provide?',
+        answersLead: 'Clear, short answers help customers understand the service before requesting a quote.',
+        answer1Title: 'Custom furniture in the UAE',
+        answer1Text: 'Emdad designs and manufactures made-to-measure home furniture, including bedrooms, sofas, TV units, dining rooms, and cabinets, with colors and materials selected around the home space and customer needs.',
+        answer2Title: 'Practical custom kitchens',
+        answer2Text: 'Emdad builds custom kitchens around storage layout, movement flow, moisture and heat considerations, and a facade style that matches the home, from initial design through final installation.',
+        answer3Title: 'Measurement, production, installation',
+        answer3Text: 'The service follows clear stages: understanding the request, reviewing measurements, selecting materials, manufacturing, finishing, delivery, and home installation so the furniture is ready to use.',
+        answer4Title: 'Who is this service for?',
+        answer4Text: 'The service suits homeowners, apartments, villas, and renovation projects that need furniture or kitchens in special sizes with higher execution quality than ready-made alternatives.',
         processKicker: 'Process',
         processTitle: 'Clear steps from measurement to installation',
         processLead: 'We turn your requirement into furniture that fits your space and use, while tracking details before production and after delivery.',
@@ -1789,8 +1974,18 @@
         step2Text: 'We help select colors, fabrics, wood, and finishes that fit the home and budget.',
         step3Title: 'Manufacturing and Finishing',
         step3Text: 'Our team builds each piece with careful standards for durability, comfort, and final appearance.',
-        step4Title: 'Delivery and Installation',
+        step4Title: 'Home Delivery Setup',
         step4Text: 'We deliver and install professionally so everything is ready to use.',
+        detailsKicker: 'Materials and Coverage',
+        detailsTitle: 'Details customers look for before contacting',
+        detailsLead: 'These details make the page more useful for customers and give search and answer engines clearer context about the service scope.',
+        detail1Title: 'Materials and finishes',
+        detail1Text: 'Materials are selected based on daily use, budget, and visual preference. Options can include wood, fabrics, kitchen surfaces, storage units, and finishes designed for repeated use.',
+        detail2Title: 'Service area',
+        detail2Text: 'Emdad serves customers in the UAE, focusing on custom home furniture and kitchens, with coordination for site review, delivery, and installation appointments.',
+        detail3Title: 'Before the quote',
+        detail3Text: 'For a more accurate quote, send photos of the space, approximate measurements, the required furniture type, city, and preferred material or color if available.',
+        keywordLine: 'Related services: custom furniture, made-to-measure kitchens, bespoke bedrooms, living rooms, dining rooms, cabinets, TV units, furniture delivery and installation in the UAE.',
         projectsKicker: 'Our Works',
         projectsTitle: 'Project examples that help customers decide',
         projectsLead: 'Photos are the strongest proof in furniture. Click any project to view more images from the same category.',
@@ -1842,17 +2037,17 @@
         benefit4Text: 'Clear timelines and direct communication before and after purchase.',
         faqKicker: 'FAQ',
         faqTitle: 'Answers that help customers decide',
-        faqLead: 'These questions support trust and conversion, and are also suitable for search results and AI answers.',
+        faqLead: 'Practical questions that help you know what to prepare before requesting a quote or sending space measurements.',
         faq1Q: 'Can you produce custom designs?',
-        faq1A: 'Yes. Emdad provides custom furniture based on the sizes, colors, and materials that match your home and needs.',
+        faq1A: 'Yes. Emdad produces custom designs for home furniture and kitchens. Sizes, colors, materials, storage layout, and final details can be tailored to the home space and daily usage needs.',
         faq2Q: 'How long does production take?',
-        faq2A: 'The timeline depends on the type and size of the order and is confirmed after agreeing on design, materials, and measurements.',
+        faq2A: 'Production time depends on project size, furniture type, and material availability. After reviewing measurements and design, Emdad confirms a clear schedule for manufacturing, finishing, delivery, and installation.',
         faq3Q: 'Do you provide delivery and installation?',
-        faq3A: 'Yes. Emdad provides safe delivery and specialized installation so the furniture is ready to use after delivery.',
+        faq3A: 'Yes. Emdad provides home delivery and installation. The installation team positions and fixes the pieces, reviews final details, and makes sure the furniture or kitchen is ready to use after delivery.',
         faq4Q: 'What materials do you use?',
-        faq4A: 'Emdad uses carefully selected materials for durability and long life, with finishes suitable for daily use.',
+        faq4A: 'Materials depend on the project type, budget, and use case. Emdad helps customers select wood, fabrics, kitchen surfaces, and finishes that balance durability, appearance, and ease of maintenance.',
         faq5Q: 'Is there a product warranty?',
-        faq5A: 'Yes. Emdad provides warranty coverage according to company policy for customer comfort and satisfaction.',
+        faq5A: 'Yes. Emdad provides warranty coverage according to company policy and the product or service type. The goal is customer comfort after delivery and support for notes related to manufacturing or installation quality.',
         finalKicker: 'Ready to start?',
         finalTitle: 'Send a photo or space measurements and we will suggest the right solution',
         finalLead: 'Whether you need a bedroom, kitchen, living room, or custom piece, Emdad can turn the idea into practical, elegant furniture.',

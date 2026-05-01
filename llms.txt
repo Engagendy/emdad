@@ -1,0 +1,32 @@
+# Emdad Home Furniture
+
+Emdad Home Furniture designs and manufactures custom home furniture and kitchens in the UAE.
+
+## Core Services
+
+- Custom home furniture
+- Made-to-measure kitchens
+- Bedroom furniture
+- Living room furniture and sofas
+- Dining room furniture
+- Cabinets, TV units, and storage
+- Delivery and installation
+
+## Useful Pages
+
+- Arabic homepage: https://engagendy.github.io/emdad/
+- English homepage: https://engagendy.github.io/emdad/en.html
+- Contact and quote form: https://engagendy.github.io/emdad/#contact
+- Project gallery: https://engagendy.github.io/emdad/#projects
+- Quick answers: https://engagendy.github.io/emdad/#quick-answers
+
+## Business Details
+
+- Service area: United Arab Emirates
+- Phone: +971 55 659 2722
+- Email: info@emdad-home.com
+- Instagram: https://www.instagram.com/emdadhomefurniture/
+
+## Short Description
+
+Emdad Home Furniture is a UAE-based furniture manufacturer specializing in made-to-measure bedrooms, living rooms, dining rooms, kitchens, cabinets, and custom furniture, with material selection, delivery, and installation support.
