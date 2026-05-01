@@ -530,6 +530,87 @@
       backdrop-filter: blur(10px);
     }
 
+    .instagram-showcase {
+      background: var(--paper);
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .video-card {
+      position: relative;
+      min-height: 420px;
+      display: flex;
+      align-items: end;
+      overflow: hidden;
+      border-radius: var(--radius);
+      color: var(--white);
+      background: var(--ink);
+    }
+
+    .video-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(23, 18, 13, .9), rgba(23, 18, 13, .16) 58%, rgba(23, 18, 13, .08));
+    }
+
+    .video-card img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .45s ease;
+    }
+
+    .video-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .video-play {
+      position: absolute;
+      inset: 18px 18px auto auto;
+      z-index: 2;
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--ink);
+      background: rgba(255, 255, 255, .9);
+      font-family: Outfit, sans-serif;
+      font-weight: 700;
+    }
+
+    .video-content {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      gap: 10px;
+      padding: 22px;
+    }
+
+    .video-content strong {
+      font-size: 1.2rem;
+      line-height: 1.35;
+    }
+
+    .video-content span {
+      color: rgba(255, 255, 255, .76);
+      font-size: .94rem;
+    }
+
+    .instagram-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
     .trust {
       background: var(--paper);
     }
@@ -866,6 +947,10 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
+      .video-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
       .quote-panel {
         position: static;
       }
@@ -961,6 +1046,14 @@
         grid-column: auto;
         grid-row: auto;
         min-height: 245px;
+      }
+
+      .video-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .video-card {
+        min-height: 360px;
       }
 
       .footer-inner {
@@ -1318,6 +1411,56 @@
       </div>
     </section>
 
+    <section class="instagram-showcase" id="instagram">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker" data-i18n="instagramKicker">من داخل إمداد</p>
+            <h2 data-i18n="instagramTitle">فيديوهات قصيرة تثبت جودة التنفيذ</h2>
+          </div>
+          <p data-i18n="instagramLead">قسم مختار من محتوى إنستغرام لعرض التصنيع، التركيب، والتفاصيل النهائية بدون تحميل تغذية إنستغرام كاملة على الصفحة.</p>
+        </div>
+        <div class="video-grid">
+          <a class="video-card reveal" href="https://www.instagram.com/emdadhomefurniture/" target="_blank" rel="noopener">
+            <img src="https://emdad-home.com/wp-content/uploads/2026/03/إمداد-لصناعة-الأثاث-المنزلي-11-scaled.webp" alt="فيديو تفاصيل تصنيع الأثاث من إمداد" loading="lazy" decoding="async">
+            <span class="video-play">▶</span>
+            <span class="video-content">
+              <strong data-i18n="video1Title">تفاصيل التصنيع</strong>
+              <span data-i18n="video1Text">لقطات قريبة للخامات، القص، والتشطيب داخل ورشة العمل.</span>
+            </span>
+          </a>
+          <a class="video-card reveal" href="https://www.instagram.com/emdadhomefurniture/" target="_blank" rel="noopener">
+            <img src="https://emdad-home.com/wp-content/uploads/2026/03/modern-kitchen-interior-design_23-2150771995.webp" alt="فيديو مطابخ حسب الطلب من إمداد" loading="lazy" decoding="async">
+            <span class="video-play">▶</span>
+            <span class="video-content">
+              <strong data-i18n="video2Title">مطابخ حسب الطلب</strong>
+              <span data-i18n="video2Text">عرض سريع لتوزيع الخزائن، الخامات، والتفاصيل العملية.</span>
+            </span>
+          </a>
+          <a class="video-card reveal" href="https://www.instagram.com/emdadhomefurniture/" target="_blank" rel="noopener">
+            <img src="https://emdad-home.com/wp-content/uploads/2026/03/2151008741.jpg" alt="فيديو تركيب غرفة معيشة من إمداد" loading="lazy" decoding="async">
+            <span class="video-play">▶</span>
+            <span class="video-content">
+              <strong data-i18n="video3Title">التوصيل والتركيب</strong>
+              <span data-i18n="video3Text">محتوى يوضح وصول القطع وتركيبها داخل منزل العميل.</span>
+            </span>
+          </a>
+          <a class="video-card reveal" href="https://www.instagram.com/emdadhomefurniture/" target="_blank" rel="noopener">
+            <img src="https://emdad-home.com/wp-content/uploads/2026/03/إمداد-لصناعة-الأثاث-المنزلي-3-scaled.webp" alt="فيديو النتيجة النهائية لأثاث إمداد" loading="lazy" decoding="async">
+            <span class="video-play">▶</span>
+            <span class="video-content">
+              <strong data-i18n="video4Title">النتيجة النهائية</strong>
+              <span data-i18n="video4Text">لقطات للغرف بعد اكتمال التصنيع والتركيب والتنسيق.</span>
+            </span>
+          </a>
+        </div>
+        <div class="instagram-actions reveal">
+          <a class="btn btn-primary" href="https://www.instagram.com/emdadhomefurniture/" target="_blank" rel="noopener" data-i18n="instagramButton">شاهد أحدث الفيديوهات على إنستغرام</a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="instagramQuote">اطلب تنفيذ مشابه</a>
+        </div>
+      </div>
+    </section>
+
     <section class="trust">
       <div class="container trust-grid">
         <aside class="quote-panel reveal" id="contact">
@@ -1524,6 +1667,19 @@
         project4: 'مطابخ',
         project5: 'تصميم خاص',
         project6: 'تشطيبات دقيقة',
+        instagramKicker: 'من داخل إمداد',
+        instagramTitle: 'فيديوهات قصيرة تثبت جودة التنفيذ',
+        instagramLead: 'قسم مختار من محتوى إنستغرام لعرض التصنيع، التركيب، والتفاصيل النهائية بدون تحميل تغذية إنستغرام كاملة على الصفحة.',
+        video1Title: 'تفاصيل التصنيع',
+        video1Text: 'لقطات قريبة للخامات، القص، والتشطيب داخل ورشة العمل.',
+        video2Title: 'مطابخ حسب الطلب',
+        video2Text: 'عرض سريع لتوزيع الخزائن، الخامات، والتفاصيل العملية.',
+        video3Title: 'التوصيل والتركيب',
+        video3Text: 'محتوى يوضح وصول القطع وتركيبها داخل منزل العميل.',
+        video4Title: 'النتيجة النهائية',
+        video4Text: 'لقطات للغرف بعد اكتمال التصنيع والتركيب والتنسيق.',
+        instagramButton: 'شاهد أحدث الفيديوهات على إنستغرام',
+        instagramQuote: 'اطلب تنفيذ مشابه',
         quoteTitle: 'اطلب عرض سعر',
         quoteLead: 'أرسل تفاصيل المساحة وسيتم تجهيز رسالة واتساب مباشرة لفريق إمداد.',
         labelName: 'الاسم',
@@ -1644,6 +1800,19 @@
         project4: 'Kitchens',
         project5: 'Custom Design',
         project6: 'Precise Finishing',
+        instagramKicker: 'Inside Emdad',
+        instagramTitle: 'Short videos that prove execution quality',
+        instagramLead: 'A curated Instagram-inspired section for manufacturing, installation, and final details without loading a heavy live Instagram feed.',
+        video1Title: 'Manufacturing Details',
+        video1Text: 'Close-up moments of materials, cutting, and finishing inside the workshop.',
+        video2Title: 'Custom Kitchens',
+        video2Text: 'Quick views of cabinet layouts, materials, and practical details.',
+        video3Title: 'Delivery and Installation',
+        video3Text: 'Content showing pieces arriving and being installed inside the customer home.',
+        video4Title: 'Final Reveal',
+        video4Text: 'Rooms after production, installation, and styling are complete.',
+        instagramButton: 'Watch latest videos on Instagram',
+        instagramQuote: 'Request a similar project',
         quoteTitle: 'Request a quote',
         quoteLead: 'Send your space details and the page will prepare a WhatsApp message for the Emdad team.',
         labelName: 'Name',
